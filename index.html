@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | Yudantoro</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Stylesheet AOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <div id="wrapperload">
+          <div class="elem">
+              <img src="./imgs/yudanlogo.png" alt="">
+          </div>
+          <div class="elem">
+              <h3>Hallo, i'm Yudan</h3>
+          </div>
+          <div class="elem">
+              <h3>Programmer</h3>
+          </div>
+          <div class="elem">
+              <h3>loves to study.</h3>
+          </div>
+      </div>
+    </div>
+
+    <header class="l-header" >
+      <nav id="desktop-nav">
+        <div class="logo">Yudan</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <img
+                id="modeToggle"
+                class="icon color-icon"
+                src="./assets/theme_light.png"
+                src-light="./assets/theme_light.png"
+                src-dark="./assets/theme_dark.png"
+                alt="Color them icon"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <!-- ... (navigasi hamburger sebelumnya) ... -->
+        <div class="logo">Yudan</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li>
+              <img
+                id="modeToggle2"
+                class="icon color-icon"
+                src="./assets/theme_light.png"
+                src-light="./assets/theme_light.png"
+                src-dark="./assets/theme_dark.png"
+                alt="Color them icon"
+              />
+            </li>
+          </div>
+        </div>
+      </nav>  
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="profile" data-aos="fade-left" data-aos-duration="60000">
+      <!-- ... (konten sebelumnya) ... -->
+      <div class="section__pic-container" >
+        <img src="./assets/yudan.png" alt="Yudan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Yudan</h1>
+        <p class="section__text__p2">Programmer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/BartolomeusYudantoro_CV_Academy.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/in/yudanns'"
+          />
+          <img
+            src="./assets/ig-black.png"
+            src-light="./assets/ig-black.png"
+            src-dark="./assets/ig-white.png"
+            alt="My github profile"
+            class="icon github-icon"
+            onclick="location.href='https://www.instagram.com/yudanns_?igsh=M3M2MGZhcmZkbXZ1'"
+          />
+          <!-- <img
+            src="./assets/github_light.png"
+            src-light="./assets/github_light.png"
+            src-dark="./assets/github_dark.png"
+            alt="My github profile"
+            class="icon github-icon"
+            onclick="location.href='https://github.com/'"
+          /> -->
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <!-- ... (konten sebelumnya) ... -->
+      <p class="section__text__p1" data-aos="fade-down" data-aos-duration="2000" class="aos-init">Get To Know More</p>
+      <h1 class="title" data-aos="fade-down" data-aos-duration="2000">About Me</h1>
+      <div class="section-container" >
+        <div class="section__pic-container" >
+          <img data-aos="fade-down" data-aos-duration="2000"
+            src="./assets/aboutyudan.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container" data-aos="fade-down" data-aos-duration="2000" class="aos-init">
+              <img
+                src="./assets/experience_light.png"
+                src-light="./assets/experience_light.png"
+                src-dark="./assets/experience_dark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container" data-aos="fade-down" data-aos-duration="2000" class="aos-init">
+              <img
+                src="./assets/education_light.png"
+                src-light="./assets/education_light.png"
+                src-dark="./assets/education_dark.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Mahasiswa Gunadarma<br />Sistem Informasi</p>
+            </div>
+          </div>
+          <div class="text-container" data-aos="fade-left" data-aos-duration="2000">
+            <p>
+              Halo, saya Yudan! Saya mahasiswa Sistem Informasi di Universitas 
+              Gunadarma dengan minat besar di bidang pengembangan web, khususnya 
+              front-end. Saya menguasai HTML, CSS, dan JavaScript untuk menciptakan
+               tampilan web yang menarik dan responsif. Saat ini, saya juga telah 
+               mempelajari Next.js dan Tailwind CSS untuk meningkatkan kemampuan 
+               dalam membangun website yang lebih modern dan efisien
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section id="experience">
+      <!-- ... (konten sebelumnya) ... -->
+      <p class="section__text__p1" data-aos="fade-down" data-aos-duration="2000">Explore My</p>
+      <h1 class="title" data-aos="fade-down" data-aos-duration="2000">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container" data-aos="fade-right" data-aos-duration="2000">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>My SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tkinter</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container" data-aos="fade-left" data-aos-duration="2000">
+            <h2 class="experience-sub-title">More Experience</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photo Grapher</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Video Grapher</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Video and Photo Editor</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Content Creator</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <!-- ... (konten sebelumnya) ... -->
+      <p class="section__text__p1" data-aos="fade-down" data-aos-duration="2000">Browse My Recent</p>
+      <h1 class="title" data-aos="fade-down" data-aos-duration="2000">Projects</h1>
+      <div class="experience-details-container" data-aos="fade-up" data-aos-duration="2000">
+        <div class="project-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">UG - LIBRARY</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">UG - STUDENT</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/web2.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Yudans Coffee web</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://e02103ae-c602-44d9-b825-92e9cfd860ff-00-m4e2hjfssv6t.worf.replit.dev/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+         <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/web1.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Burger-jir Web</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ffa7a3f4-f3f3-47b7-8b7f-7608c950eb6b-00-10lwxpv1fdf3k.riker.replit.dev/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project4.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Burger-jir desktop App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://e02103ae-c602-44d9-b825-92e9cfd860ff-00-m4e2hjfssv6t.worf.replit.dev/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/yuyu-soundz.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">yuyu-Soundz Web</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://269187ff-2feb-4164-9b27-d2aeb6e64b76-00-668pgvd7cuo1.janeway.replit.dev/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project5.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Yud-Shoes App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://269187ff-2feb-4164-9b27-d2aeb6e64b76-00-668pgvd7cuo1.janeway.replit.dev/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project6.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Harsa - Coffee App </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://269187ff-2feb-4164-9b27-d2aeb6e64b76-00-668pgvd7cuo1.janeway.replit.dev/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/yuyu-soundz.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">yuyu-Soundz Web</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://269187ff-2feb-4164-9b27-d2aeb6e64b76-00-668pgvd7cuo1.janeway.replit.dev/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/image.png"
+                alt="Project RIORS"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">RIORS WEBSITE</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://demo.riors.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" class="aos-init">
+      <!-- ... (konten sebelumnya) ... -->
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email_light.png"
+            src-light="./assets/email_light.png"
+            src-dark="./assets/email_dark.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:yudannnnn80@gmail.com">yudannnnn80@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://linkedin.com/in/yudanns'"
+          />
+          <p><a href="https://www.linkedin.com">Yudantoro</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <!-- ... (footer sebelumnya) ... -->
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Yudan. All Rights Reserved.</p>
+    </footer>
+    </footer>
+    <script src="script.js"></script>
+    <!-- Tambahkan script AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
